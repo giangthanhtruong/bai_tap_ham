@@ -7,8 +7,8 @@
 <body>
 <table>
     <tr>
-        <td><input type="Number" oninput="feet(this.value)">Feet :</td>
-        <td><input type="Number" oninput="meters(this.value)">Meters :</td>
+        <td><input type="Number" oninput="feet(this.value)">: Feet</td>
+        <td><input type="Number" oninput="meters(this.value)">: Meters</td>
     </tr>
     <tr>
         <td><p id="meters"></p></td>
@@ -16,11 +16,12 @@
     </tr>
 </table>
 <script>
-    function feet(a){
-        document.getElementById("meters").innerHTML='Meters: '+0.305 * a;
+    function feet(a) {
+        document.getElementById("meters").innerHTML = 'Meters: ' + 0.305 * a;
     }
-    function meters(a){
-        document.getElementById('feet').innerHTML='Feet: '+3.2787  * a;
+
+    function meters(a) {
+        document.getElementById('feet').innerHTML = 'Feet: ' + 3.2787 * a;
     }
 </script>
 </body>
