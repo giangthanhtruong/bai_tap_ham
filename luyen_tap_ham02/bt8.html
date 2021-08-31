@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function reverse(arr){
+            let first=0,last=arr.length-1
+            while (first<last){
+                let temp=arr[last]
+                arr[last]=arr[first]
+                arr[first]=temp
+                last--
+                first++
+            }
+            return arr
+        }
+
+        let num=prompt('mang co bao nhieu phan tu'),
+            arr=[]
+        for (let i=0;i<num;i++){
+            arr[i]=(prompt('phan tu thu '+(i+1)))
+        }
+        console.log(arr)
+        alert(reverse(arr))
+    </script>
+</body>
+</html>
