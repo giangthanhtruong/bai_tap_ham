@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = prompt('nhap chuoi')
+    document.write(isPalindrome(arr))
+    function isPalindrome(arr) {
+        let n = arr.length;
+        let first = 0;
+        let last=n-1;
+        while (first<last){
+            if(arr[first]!==arr[last]){
+                return false;
+            }
+            first++;
+            last--;
+        }
+        return true;
+    }
+</script>
+</body>
+</html>

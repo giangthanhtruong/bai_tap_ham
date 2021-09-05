@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <script>
+        let r = prompt("Nhập vào bán kính hình tròn: ")
+        let c;
+        let s;
+        function showC() {
+           c = (r * 2) * 3.14;
+           return c;
+        }
+        let checkC = showC();
+        document.write("Chu vi: " + checkC);
+        document.write("<br>")
+        function showS() {
+            s = (r * r) * 3.14;
+           return s;
+        }
+        let checkS = showS();
+        document.write("Diện tích : " + checkS)
+    </script>
 </body>
 </html>

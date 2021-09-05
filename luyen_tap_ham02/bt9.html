@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <script>
+        let x=prompt('ki tu can tim')
+        function reverse(arr,x){
+            let count=0
+            for (let i=0;i<arr.length;i++){
+                if (arr[i]===x) count++
+            }if (count===0) count--
+            return count
+        }
+        let num=prompt('mang co bao nhieu phan tu'),
+            arr=[]
+        for (let i=0;i<num;i++){
+            arr[i]=(prompt('phan tu thu '+(i+1)))
+        }
+
+        alert(reverse(arr,x))
+    </script>
 </body>
 </html>

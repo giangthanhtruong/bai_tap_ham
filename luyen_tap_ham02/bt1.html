@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+    <script>
+        let number = parseInt(prompt("Nhập vào số bạn muốn tính: "))
+        function showNumber() {
+            number = number * number;
+            return number
+        }
+        let checkNumber = showNumber(number)
+        document.write(checkNumber)
+    </script>
 </body>
 </html>

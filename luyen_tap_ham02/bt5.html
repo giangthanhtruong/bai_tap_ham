@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = prompt('so thu 1');
+    let b = prompt('so thu 2');
+    let c = prompt('so thu 3');
+
+    function min(a, b, c) {
+        let min = a
+        if (b < min) min = b
+        if (c < min) min = c
+        return min
+    }
+
+    alert('so nho nhat la ' + min(a, b, c))
+</script>
 </body>
 </html>
